@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CycleQueue" target="1.5" />
+      <module name="CycleQueue" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

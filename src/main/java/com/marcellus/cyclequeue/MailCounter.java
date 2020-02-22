@@ -1,4 +1,4 @@
-package com.cyclequeue;
+package com.marcellus.cyclequeue;
 
 public class MailCounter {
 
