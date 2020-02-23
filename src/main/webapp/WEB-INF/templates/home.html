@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="pl-PL" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
     <title>Symulator Kolejki Cyklicznej</title>
 </head>
 <body>
-    <h1>Tekst</h1>
-    <p th:text="'test'">test</p>
+<div class="container-fluid align-self-center">
+    <div class="col-6">
+        <h1>Pobierz bilet</h1>
+        <form id = "sadowe" th:action = "@{/test}"  method="post">
+            <div class="col-lg-4">
+                <p>Przesylki Sadowe</p>
+                <br/>
+                <input type="submit" value="Pobierz" class="btn btn-primary" />
+            </div>
+        </form>
+        <form id = "paczki" th:action = "@{/test}"  method="post">
+            <div class="col-lg-4">
+                <p>Paczki</p>
+                <br/>
+                <input type="submit" value="Pobierz" class="btn btn-primary" />
+            </div>
+        </form>
+        <form id = "inne" th:action = "@{/test}"  method="post">
+            <div class="col-lg-4">
+                <p>Inne</p>
+                <br/>
+                <input type="submit" value="Pobierz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
