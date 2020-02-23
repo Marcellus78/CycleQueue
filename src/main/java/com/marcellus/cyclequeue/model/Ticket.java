@@ -44,6 +44,6 @@ public class Ticket {
     }
 
     public static enum Type{
-        LEAGAL, PACKAGE, OTHER
+        LEGAL, PACKAGE, OTHER
     }
 }

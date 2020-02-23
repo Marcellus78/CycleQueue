@@ -10,25 +10,28 @@
 </head>
 <body>
 <div class="container-fluid align-self-center">
-    <div class="col-6">
+    <div class="col-12">
         <h1>Pobierz bilet</h1>
-        <form id = "sadowe" th:action = "@{/test}"  method="post">
-            <div class="col-lg-4">
+        <form id = "sadowe" th:action = "@{/test}"  method="post" th:object="${ticket}">
+            <div class="col-4">
                 <p>Przesylki Sadowe</p>
+                <input type="hidden"  name="type" value="LEGAL"/>
                 <br/>
                 <input type="submit" value="Pobierz" class="btn btn-primary" />
             </div>
         </form>
-        <form id = "paczki" th:action = "@{/test}"  method="post">
-            <div class="col-lg-4">
+        <form id = "paczki" th:action = "@{/test}"  method="post" th:object="${ticket}">
+            <div class="col-4">
                 <p>Paczki</p>
+                <input type="hidden"  name="type" value="PACKAGE"/>
                 <br/>
                 <input type="submit" value="Pobierz" class="btn btn-primary" />
             </div>
         </form>
-        <form id = "inne" th:action = "@{/test}"  method="post">
-            <div class="col-lg-4">
+        <form id = "inne" th:action = "@{/test}"  method="post" th:object="${ticket}">
+            <div class="col-4">
                 <p>Inne</p>
+                <input type="hidden"  name="type" value="OTHER"/>
                 <br/>
                 <input type="submit" value="Pobierz" class="btn btn-primary" />
             </div>
